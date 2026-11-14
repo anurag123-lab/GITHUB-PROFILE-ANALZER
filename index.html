@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Analyser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header">
+            <a class="brand" href="#" aria-label="GitHub Profile Analyser home">GITHUB <span>profile analyser</span></a>
+            <button class="theme-button" type="button">Dark mode</button>
+        </div>
+    </header>
+    <main>
+        <section class="hero" aria-labelledby="page-title">
+            <div class="intro">
+                <p class="eyebrow">YOUR NEXT DEVELOPER DEEP DIVE</p>
+                <h1 id="page-title">See what a GitHub profile <span>really shows.</span></h1>
+                <p class="subtitle">Enter a username to explore repository stats, top languages, and activity at a glance.</p>
+            </div>
+
+            <section class="search-card" aria-label="Search GitHub profiles">
+                <label class="input-label" for="username">GitHub username</label>
+                <form class="search-controls" id="search-form">
+                    <input type="text" placeholder="e.g. anuraglab123" id="username" autocomplete="off">
+                    <div class="actions">
+                        <button class="analyze-button" id="analyze-button" type="submit">Analyze profile <span aria-hidden="true">→</span></button>
+                        <button class="compare-button" type="button">Compare two users</button>
+                    </div>
+                </form>
+                <div class="suggestions" aria-label="Suggested usernames">
+                    <span class="suggestions-title">Try a profile</span>
+                    <button class="suggestion-chip" type="button" data-username="octocat">octocat</button>
+                    <button class="suggestion-chip" type="button" data-username="torvalds">torvalds</button>
+                    <button class="suggestion-chip" type="button" data-username="gaearon">gaearon</button>
+                </div>
+            </section>
+            <p class="search-status" id="search-status" role="status" aria-live="polite" hidden></p>
+
+            <div class="analysis-results" id="analysis-results" hidden>
+                <section class="result-card profile-card" aria-labelledby="profile-name">
+                    <img class="profile-avatar" id="profile-avatar" alt="" hidden>
+                    <div class="profile-content">
+                        <p class="result-eyebrow">PROFILE OVERVIEW</p>
+                        <h2 id="profile-name"></h2>
+                        <a class="profile-handle" id="profile-handle" target="_blank" rel="noopener noreferrer"></a>
+                        <p class="profile-bio" id="profile-bio"></p>
+                        <div class="profile-details" id="profile-details"></div>
+                    </div>
+                </section>
+
+                <section class="result-card" aria-labelledby="stats-heading">
+                    <div class="section-heading">
+                        <p class="result-eyebrow">AT A GLANCE</p>
+                        <h2 id="stats-heading">Public profile stats</h2>
+                    </div>
+                    <div class="stats-grid" id="stats-grid"></div>
+                </section>
+
+                <section class="result-card" aria-labelledby="languages-heading">
+                    <div class="section-heading">
+                        <p class="result-eyebrow">CODE PROFILE</p>
+                        <h2 id="languages-heading">Languages used</h2>
+                        <p class="section-description">Primary languages reported for up to 100 public repositories.</p>
+                    </div>
+                    <div class="languages-list" id="languages-list"></div>
+                </section>
+
+                <section class="result-card" aria-labelledby="repositories-heading">
+                    <div class="section-heading">
+                        <p class="result-eyebrow">COMMUNITY FAVORITES</p>
+                        <h2 id="repositories-heading">Top repositories</h2>
+                        <p class="section-description">Ranked by stars among the latest 100 public repositories.</p>
+                    </div>
+                    <div class="repositories-list" id="repositories-list"></div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
