@@ -1,8 +1,8 @@
-<img width="1920" height="1080" alt="githubAnalyser png" src="https://github.com/user-attachments/assets/b00bea69-75bf-480b-a744-495bf409a325" /># GitHub Profile Analyser
+# GitHub Profile Analyser
 
 A web app where you enter any GitHub username and instantly see their profile, stats, top repositories and most used languages. It uses the public GitHub API, so no login or API key is needed.
 
-(<img width="1920" height="1080" alt="githubAnalyser png" src="https://github.com/user-attachments/assets/a6a997b7-f082-47d0-904a-ea84fa447f94" />
+(<img width="1020" height="880" alt="githubAnalyser png" src="https://github.com/user-attachments/assets/a6a997b7-f082-47d0-904a-ea84fa447f94" />
 
 
 
@@ -13,6 +13,8 @@ A web app where you enter any GitHub username and instantly see their profile, s
 - **Top repositories:** the 8 most starred repos, with description, language, stars and forks
 - **Languages used:** a progress bar for each language, with percentage and repo count
 - **Error handling:** a clear message for unknown usernames, and a check for an empty search box
+
+<img width="956" height="469" alt="Screenshot 2026-11-15 200027" src="https://github.com/user-attachments/assets/f9c997f4-6e37-4cf2-b67d-3a8ae05424f9" />
 
 ## Built With
 
