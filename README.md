@@ -2,6 +2,8 @@
 
 A web app where you enter any GitHub username and instantly see their profile, stats, top repositories and most used languages. It uses the public GitHub API, so no login or API key is needed.
 
+live Demo : https://githubanlyser.vercel.app/
+
 (<img width="1020" height="880" alt="githubAnalyser png" src="https://github.com/user-attachments/assets/a6a997b7-f082-47d0-904a-ea84fa447f94" />
 
 
