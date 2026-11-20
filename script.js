@@ -9,7 +9,16 @@ const profileStats = document.querySelector('#stats-grid');
 const repoList = document.querySelector('#repositories-list');
 const languageLists = document.querySelector('#languages-list');
 const errorMessage = document.querySelector('#search-status');
+const themechange = document.querySelector('.theme-button');
 
+themechange.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    if(document.body.classList.contains('light-theme')){
+        themechange.textContent = 'Dark Mode';
+    } else {
+        themechange.textContent = 'Light Mode';
+    }
+});
 
 searchForm.addEventListener('submit', async (event) => {
     event.preventDefault();
