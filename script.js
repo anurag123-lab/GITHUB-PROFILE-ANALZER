@@ -10,6 +10,15 @@ const repoList = document.querySelector('#repositories-list');
 const languageLists = document.querySelector('#languages-list');
 const errorMessage = document.querySelector('#search-status');
 const themechange = document.querySelector('.theme-button');
+const suggestionchip = document.querySelectorAll('.suggestion-chip');
+
+
+suggestionchip.forEach((chip) => {
+    chip.addEventListener('click', () => {
+        usernameInput.value = chip.dataset.username;
+        searchForm.requestSubmit();
+    });
+});
 
 themechange.addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
